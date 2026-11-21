@@ -26,6 +26,8 @@ The data is KwikDrop's order log, exported as a CSV file. It covers 1 January to
 - 65.3% of orders are paid on delivery.
 - In-house riders beat 3PL riders on speed (82 vs 92 min), rating (4.24 vs 3.57) and success rate (80.5% vs 77.8%).
 - Deliveries over 100 minutes average 2.87 stars, against 4.48 for faster ones.
+
+DASHBOARD
 - 
 # Data Cleaning and Transformation
 All steps were done in Power Query.
