@@ -1,2 +1,3 @@
-# kwikdrop-analysis
-This project documents the analysis of wkikdrop delivery company. This is a power BI project.
+# KwikDrop Last-Mile Delivery Performance Report (January – June 2026)
+
+![header image](header_image.jpg)
