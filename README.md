@@ -7,7 +7,7 @@
 ##### Three issues stand out. Mainland to Island is the weakest route (23.3% failure, 128 min average). Transfer on Delivery, the most used payment method, fails 27.9% of the time. 3PL riders are slower and lower rated than in-house riders. Fixing the cross-bridge route, pushing prepayment and tightening 3PL standards would recover a large share of lost revenue and directly address merchant complaints.
 
 ## Business Context
-##### KwikDrop is a Lagos last-mile delivery company serving e-commerce, social commerce and food merchants. Order volume grew quickly in 2026, but merchant churn rose 14%, with vendors citing unpredictable delivery times, failed deliveries and poor rider accountability. Operations reviews relied on raw Excel sheets, so problems surfaced only after complaints. Management needed a single dashboard to spot bottlenecks, compare fleets and measure payment risk.
+KwikDrop is a Lagos last-mile delivery company serving e-commerce, social commerce and food merchants. Order volume grew quickly in 2026, but merchant churn rose 14%, with vendors citing unpredictable delivery times, failed deliveries and poor rider accountability. Operations reviews relied on raw Excel sheets, so problems surfaced only after complaints. Management needed a single dashboard to spot bottlenecks, compare fleets and measure payment risk.
 
 ## Objectives
 - What are KwikDrop's headline delivery volume, success rate, revenue and delivery time?
@@ -15,19 +15,19 @@
 - How does the 3PL fleet compare with the in-house fleet on speed and customer rating?
 - How exposed is KwikDrop to pay-on-delivery risk?
 ________________________________________
-Data Overview
+# Data Overview
 The data is KwikDrop's order log, exported as a CSV file. It covers 1 January to 30 June 2026 and contains 6,500 rows (one per order) across 14 columns. It spans 6 pickup hubs, 4 route corridors, 59 riders, 2 fleet types and 4 payment methods. Delivery time and customer rating are recorded only for delivered orders.
-________________________________________
-Key Findings
-●	79.3% of orders were delivered; ₦6.38m in fees was lost on 1,347 undelivered orders.
-●	Mainland to Island has the highest failure rate (23.3%) and slowest deliveries (128 min), yet brings in the most revenue (₦9.69m, 41% of total).
-●	Evening dispatches on Mainland to Island fail 35.7% of the time.
-●	Transfer on Delivery fails 27.9% of the time, more than double prepaid (13.3%).
-●	65.3% of orders are paid on delivery.
-●	In-house riders beat 3PL riders on speed (82 vs 92 min), rating (4.24 vs 3.57) and success rate (80.5% vs 77.8%).
-●	Deliveries over 100 minutes average 2.87 stars, against 4.48 for faster ones.
-________________________________________
-Data Cleaning and Transformation
+
+# Key Findings
+- 79.3% of orders were delivered; ₦6.38m in fees was lost on 1,347 undelivered orders.
+- Mainland to Island has the highest failure rate (23.3%) and slowest deliveries (128 min), yet brings in the most revenue (₦9.69m, 41% of total).
+- Evening dispatches on Mainland to Island fail 35.7% of the time.
+- Transfer on Delivery fails 27.9% of the time, more than double prepaid (13.3%).
+- 65.3% of orders are paid on delivery.
+- In-house riders beat 3PL riders on speed (82 vs 92 min), rating (4.24 vs 3.57) and success rate (80.5% vs 77.8%).
+- Deliveries over 100 minutes average 2.87 stars, against 4.48 for faster ones.
+- 
+# Data Cleaning and Transformation
 All steps were done in Power Query.
 1.	Loaded the CSV and renamed the query Deliveries.
 2.	Set data types: Order_Date (Date), Dispatch_Time (Time), Delivery_Time_Mins, Delivery_Fee_NGN and Customer_Rating (Whole Number), all others (Text).
