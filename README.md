@@ -3,11 +3,11 @@
 ![header image](header_image.jpg)
 
 ## Executive Summary
-##### KwikDrop dispatched 6,500 orders in H1 2026 and delivered 79.3% of them, earning ₦23.79m in delivery fees. One in five orders (1,347) was not delivered, leaving ₦6.38m in fees unearned.
-##### Three issues stand out. Mainland to Island is the weakest route (23.3% failure, 128 min average). Transfer on Delivery, the most used payment method, fails 27.9% of the time. 3PL riders are slower and lower rated than in-house riders. Fixing the cross-bridge route, pushing prepayment and tightening 3PL standards would recover a large share of lost revenue and directly address merchant complaints.
+ KwikDrop dispatched 6,500 orders in H1 2026 and delivered 79.3% of them, earning ₦23.79m in delivery fees. One in five orders (1,347) was not delivered, leaving ₦6.38m in fees unearned.
+Three issues stand out. Mainland to Island is the weakest route (23.3% failure, 128 min average). Transfer on Delivery, the most used payment method, fails 27.9% of the time. 3PL riders are slower and lower rated than in-house riders. Fixing the cross-bridge route, pushing prepayment and tightening 3PL standards would recover a large share of lost revenue and directly address merchant complaints.
 
 ## Business Context
-KwikDrop is a Lagos last-mile delivery company serving e-commerce, social commerce and food merchants. Order volume grew quickly in 2026, but merchant churn rose 14%, with vendors citing unpredictable delivery times, failed deliveries and poor rider accountability. Operations reviews relied on raw Excel sheets, so problems surfaced only after complaints. Management needed a single dashboard to spot bottlenecks, compare fleets and measure payment risk.
+- KwikDrop is a Lagos last-mile delivery company serving e-commerce, social commerce and food merchants. Order volume grew quickly in 2026, but merchant churn rose 14%, with vendors citing unpredictable delivery times, failed deliveries and poor rider accountability. Operations reviews relied on raw Excel sheets, so problems surfaced only after complaints. Management needed a single dashboard to spot bottlenecks, compare fleets and measure payment risk.
 
 ## Objectives
 - What are KwikDrop's headline delivery volume, success rate, revenue and delivery time?
@@ -28,7 +28,8 @@ The data is KwikDrop's order log, exported as a CSV file. It covers 1 January to
 - Deliveries over 100 minutes average 2.87 stars, against 4.48 for faster ones.
 
 DASHBOARD
-- 
+![dashboard](dashboard.Png) 
+
 # Data Cleaning and Transformation
 All steps were done in Power Query.
 1.	Loaded the CSV and renamed the query Deliveries.
