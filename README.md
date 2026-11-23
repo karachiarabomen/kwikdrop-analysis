@@ -2,6 +2,7 @@
 
 ![header image](header_image.jpg)
 
+
 ## Executive Summary
  KwikDrop dispatched 6,500 orders in H1 2026 and delivered 79.3% of them, earning ₦23.79m in delivery fees. One in five orders (1,347) was not delivered, leaving ₦6.38m in fees unearned.
 Three issues stand out. Mainland to Island is the weakest route (23.3% failure, 128 min average). Transfer on Delivery, the most used payment method, fails 27.9% of the time. 3PL riders are slower and lower rated than in-house riders. Fixing the cross-bridge route, pushing prepayment and tightening 3PL standards would recover a large share of lost revenue and directly address merchant complaints.
@@ -14,7 +15,7 @@ Three issues stand out. Mainland to Island is the weakest route (23.3% failure, 
 -	Which route corridors cause the most failures and delays?
 - How does the 3PL fleet compare with the in-house fleet on speed and customer rating?
 - How exposed is KwikDrop to pay-on-delivery risk?
-________________________________________
+  
 # Data Overview
 The data is KwikDrop's order log, exported as a CSV file. It covers 1 January to 30 June 2026 and contains 6,500 rows (one per order) across 14 columns. It spans 6 pickup hubs, 4 route corridors, 59 riders, 2 fleet types and 4 payment methods. Delivery time and customer rating are recorded only for delivered orders.
 
@@ -30,15 +31,17 @@ The data is KwikDrop's order log, exported as a CSV file. It covers 1 January to
 DASHBOARD
 ![dashboard](dashboard.png) 
 
+
+## Click here to view 
+
 # Data Cleaning and Transformation
 All steps were done in Power Query.
-1.	Loaded the CSV and renamed the query Deliveries.
-2.	Set data types: Order_Date (Date), Dispatch_Time (Time), Delivery_Time_Mins, Delivery_Fee_NGN and Customer_Rating (Whole Number), all others (Text).
-3.	Checked for duplicates: all 6,500 Order_IDs unique, no duplicate rows.
-4.	Checked text columns for inconsistent casing, spelling and extra spaces: none found.
-5.	Kept nulls in Delivery_Time_Mins and Customer_Rating for undelivered orders, rather than replacing them with 0, so averages are not distorted.
-________________________________________
-
+- Loaded the CSV and renamed the query Deliveries.
+- Set data types: Order_Date (Date), Dispatch_Time (Time), Delivery_Time_Mins, Delivery_Fee_NGN and Customer_Rating (Whole Number), all others (Text).
+- Checked for duplicates: all 6,500 Order_IDs unique, no duplicate rows.
+- Checked text columns for inconsistent casing, spelling and extra spaces: none found.
+- Kept nulls in Delivery_Time_Mins and Customer_Rating for undelivered orders, rather than replacing them with 0, so averages are not distorted.
+  
 
 Detailed Findings & Analysis
 Headline Performance
