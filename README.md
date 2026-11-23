@@ -28,7 +28,7 @@ The data is KwikDrop's order log, exported as a CSV file. It covers 1 January to
 - Deliveries over 100 minutes average 2.87 stars, against 4.48 for faster ones.
 
 DASHBOARD
-![dashboard](dashboard.Png) 
+![dashboard](dashboard.png) 
 
 # Data Cleaning and Transformation
 All steps were done in Power Query.
