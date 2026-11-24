@@ -33,7 +33,8 @@ The data is KwikDrop's order log, exported as a CSV file. It covers 1 January to
 ![dashboard](dashboard.png) 
 
 
-## Click here to view 
+## Link to Power BI Report 
+ CLICK HERE 
 
 # Data Cleaning and Transformation
 All steps were done in Power Query.
