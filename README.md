@@ -35,7 +35,7 @@ The data is KwikDrop's order log, exported as a CSV file. It covers 1 January to
 
 ## Link to Power BI Report 
 
- Click the link to assess the full power Bi report: [CLICK Here](https://app.powerbi.com/view?r=eyJrIjoiYzdhYjcwYjMtOTM4Yi00MTMzLTkxNmEtOGMwOTkwN2UxNWU3IiwidCI6ImJjN2Y1MzUzLTgxZTYtNDk5My1hZjI4LTBhZGUzNWI4NzU4ZCJ9) 
+ Click the link to assess the full power Bi report: [CLICK HERE](https://app.powerbi.com/view?r=eyJrIjoiYzdhYjcwYjMtOTM4Yi00MTMzLTkxNmEtOGMwOTkwN2UxNWU3IiwidCI6ImJjN2Y1MzUzLTgxZTYtNDk5My1hZjI4LTBhZGUzNWI4NzU4ZCJ9) 
 
 # Data Cleaning and Transformation
 All steps were done in Power Query.
