@@ -16,10 +16,10 @@
 - How does the 3PL fleet compare with the in-house fleet on speed and customer rating?
 - How exposed is KwikDrop to pay-on-delivery risk?
   
-# Data Overview
+## Data Overview
 The data is KwikDrop's order log, exported as a CSV file. It covers 1 January to 30 June 2026 and contains 6,500 rows (one per order) across 14 columns. It spans 6 pickup hubs, 4 route corridors, 59 riders, 2 fleet types and 4 payment methods. Delivery time and customer rating are recorded only for delivered orders.
 
-# Key Findings
+## Key Findings
 - 79.3% of orders were delivered; ₦6.38m in fees was lost on 1,347 undelivered orders.
 - Mainland to Island has the highest failure rate (23.3%) and slowest deliveries (128 min), yet brings in the most revenue (₦9.69m, 41% of total).
 - Evening dispatches on Mainland to Island fail 35.7% of the time.
@@ -28,7 +28,7 @@ The data is KwikDrop's order log, exported as a CSV file. It covers 1 January to
 - In-house riders beat 3PL riders on speed (82 vs 92 min), rating (4.24 vs 3.57) and success rate (80.5% vs 77.8%).
 - Deliveries over 100 minutes average 2.87 stars, against 4.48 for faster ones.
 
-# DASHBOARD
+## DASHBOARD
 
 ![dashboard](dashboard.png) 
 
