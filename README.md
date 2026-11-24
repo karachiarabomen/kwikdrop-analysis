@@ -39,17 +39,17 @@ The data is KwikDrop's order log, exported as a CSV file. It covers 1 January to
 
 
 
-# Data Cleaning and Transformation
+## Data Cleaning and Transformation
 All steps were done in Power Query.
 - Loaded the CSV and renamed the query Deliveries.
-- Set data types: Order_Date (Date), Dispatch_Time (Time), Delivery_Time_Mins, Delivery_Fee_NGN and Customer_Rating (Whole Number), all others (Text).
-- Checked for duplicates: all 6,500 Order_IDs unique, no duplicate rows.
-- Checked text columns for inconsistent casing, spelling and extra spaces: none found.
+- **Set data types:** Order_Date (Date), Dispatch_Time (Time), Delivery_Time_Mins, Delivery_Fee_NGN and Customer_Rating (Whole Number), all others (Text).
+- **Checked for duplicates:** all 6,500 Order_IDs unique, no duplicate rows.
+- **Checked text columns** for inconsistent casing, spelling and extra spaces: none found.
 - Kept nulls in Delivery_Time_Mins and Customer_Rating for undelivered orders, rather than replacing them with 0, so averages are not distorted.
   
 
-# Detailed Findings & Analysis
-## Headline Performance
+## Detailed Findings & Analysis
+### Headline Performance
 
 - KwikDrop dispatched 6,500 orders, delivered 79.3% of them and earned ₦23,787,150 in fees. The average delivery took 86.7 minutes from dispatch to doorstep.
 - Monthly volume rose 60%, from 840 orders in January to 1,347 in June. Success rate dipped to its lowest in April (77.3%), the start of the rainy season.
@@ -61,13 +61,13 @@ Route Bottlenecks
 - Island to Island: 985 orders, 19.2% failure, 47 min average, ₦2.58m revenue.
 - Cross-bridge deliveries take more than twice as long as same-side ones. Mainland to Island is both the riskiest and most valuable route, so every failure there costs the most.
 
-## Fleet Performance
+### Fleet Performance
 - In-house riders deliver in 82.4 minutes on average, against 92.1 minutes for 3PL riders.
 - Customers rate in-house riders 4.24 out of 5, compared with 3.57 for 3PL riders. In-house riders also complete more orders (80.5% vs 77.8%).
 - Speed drives ratings: slow deliveries (over 100 min) average 2.87 stars. Friday afternoon dispatches average 104 minutes, against 85 at other times.
 
   
-## Payment Risk
+### Payment Risk
 - Transfer on Delivery: 40.3% of orders, 27.9% failure rate.
 Prepaid (Card/USSD): 34.7% of orders, 13.3% failure rate.
 - POS on Delivery: 15.0% of orders, 19.5% failure rate.
@@ -79,22 +79,24 @@ Cash on Delivery: 10.1% of orders, 19.1% failure rate.
 Hub success rates are close (77.6% Yaba to 80.9% Lekki). Surulere is the slowest hub at 95.5 minutes. Ikeja is the largest by volume (1,651 orders) and revenue (₦5.88m).
 _______________________________________
 
-# Recommendations
-- Fix Mainland to Island: add a confirm-before-dispatch call, avoid evening dispatches across the bridge, and consider an Island micro-hub for afternoon Mainland orders.
-- Push prepayment: offer a small discount for prepaid orders, and require customers to confirm transfer readiness before the rider leaves.
-- Hold 3PL partners to standards: set minimum speed and rating targets in contracts, and route high-value cross-bridge orders to in-house riders.
-- Reduce failed attempts: send automated arrival alerts so customers are reachable, since unavailability is the top failure cause.
-- Plan for peak friction: add rider capacity for Friday afternoons and the rainy season (April–June).
+## Recommendations
+- **Fix Mainland to Island:** add a confirm-before-dispatch call, avoid evening dispatches across the bridge, and consider an Island micro-hub for afternoon Mainland orders.
+- **Push prepayment:** offer a small discount for prepaid orders, and require customers to confirm transfer readiness before the rider leaves.
+- **Hold 3PL partners to standards:** set minimum speed and rating targets in contracts, and route high-value cross-bridge orders to in-house riders.
+- **Reduce failed attempts:** send automated arrival alerts so customers are reachable, since unavailability is the top failure cause.
+- **Plan for peak friction:** add rider capacity for Friday afternoons and the rainy season (April–June).
 - Investigate Surulere delivery times.
-________________________________________
-# Tools Used
-- Power Query: data loading and cleaning
-- DAX: measures
-- Power BI Desktop: modelling and visualization
 _______________________________________
 
 
-# Conclusion
+## Tools Used
+- **Power Query:** data loading and cleaning
+- **DAX:** measures
+- **Power BI Desktop:** modelling and visualization
+_______________________________________
+
+
+## Conclusion
 - KwikDrop is growing fast, but one in five orders fails, costing ₦6.38m in unearned fees and driving merchant churn. The causes are concentrated: the Mainland to Island route, Transfer on Delivery payments and slower 3PL riders. Acting on these three areas gives KwikDrop the clearest path to higher success rates, more revenue and happier merchants.
 
 
